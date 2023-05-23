@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk-alpine
+VOLUME jenkins:/var/jenkins_home
 RUN addgroup -S devopsc && adduser -S javams -G devopsc
 USER javams:devopsc
 ENV JAVA_OPTS=""
